@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/destyle.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>MENU</li>
+                <li>ABOUT</li>
+                <li>LOCATION</li>
+            </ul>
+        </nav>
+        <h1 class="main-title" >COFFEE</h1>
+    </header>
+    <section id="menu">
+        <div class="menu-title section-title">        
+            <h1>MENU</h1>
+        </div>
+        <div class="menu-content section-content">
+            <div class="menu-content-left">
+                <h1 class="menu-content-title">COFFEE</h1>
+                <div class="menu-inner">
+                    <dl>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="menu-content-right">
+                <h1 class="menu-content-title">FOOD</h1>
+                <div class="menu-inner">
+                    <dl>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                    </dl>
+                </div>
+                <h1 class="menu-content-title">OTHER</h1>
+                <div class="menu-inner">
+                    <dl>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                        <dt>XXXXXXXX</dt>
+                        <dd>¥500</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="about">
+        <div class="section-title">        
+            <h1>ABOUT</h1>
+        </div>
+        <div class="about-content section-content">
+            <div class="about-content-title">
+                <h1>COFFEE</h1>
+            </div>
+            <div class="about-content-inner">
+                <div class="about-item">
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                </div>
+                <div class="about-item">
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                </div>
+                <div class="about-item">
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                </div>
+                <div class="about-item">
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト 
+                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                </div>
+            </div>
+            <button>Read More</button>
+        </div>
+    </div>
+    <div id="location">
+        <div class="section-title">        
+            <h1>LOCATION</h1>
+        </div>
+        <div class="location-content-title">
+            <h1>OUR STORE</h1>
+        </div>
+        <div class="location-content-inner section-content">
+            <div id="map"></div>
+            <ul class="info" >
+                <li>
+                    X-XX-XX, Ebisuminami, Shibuya-ku, Tokyo 150-0022 <br>
+                    東京都渋谷区恵比寿南X-XX-XX
+                </li>
+                <li>
+                    Open 7 days a Week <br>
+                    9:00am to 10:00pm
+                </li>
+                <li>
+                    Tel : XX-XXXX-XXXX
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <p>&copy;COFFEE</p>
+        </footer>
+
+        <script type="text/javascript">
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), { // #sampleに地図を埋め込む
+                    center: { // 地図の中心を指定
+                        lat: 34.7019399, // 緯度
+                        lng: 135.51002519999997 // 経度
+                    },
+                    zoom: 19 // 地図のズームを指定
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6NyToNAnh9YktJESJxtob_3eudiIoaXw&callback=initMap"></script>    
+    </div>
+</body>
+</html>
